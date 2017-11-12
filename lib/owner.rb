@@ -62,6 +62,3 @@ class Owner
     @pets.each {|type, pets| pets.each {|pet| puts pet.name}}
   end
 end
-
-
-end
