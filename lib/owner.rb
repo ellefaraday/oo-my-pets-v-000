@@ -11,7 +11,7 @@ class Owner
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end
 
-  def self.all 
+  def self.all
     @@owners
   end
 
@@ -59,7 +59,7 @@ class Owner
 
   def sell_pets
     @pets.each {|type, pets| pets.each {|pet| pet.mood = "nervous"}}
-    @pets.values.clear
+    @pets.each {|type, pets| pets.clear}
   end
 
   def list_pets
